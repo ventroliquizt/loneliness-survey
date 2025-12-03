@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loneliness Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Language Switcher -->
+  <div class="lang-switch" id="langBtn" data-lang="mn">
+    <div class="flag-circle">
+      <img id="flagImg" src="flag.png" alt="Flag">
+    </div>
+    <div id="langText">MN</div>
+  </div>
+
+  <h1 data-i18n="title">Loneliness Prediction Survey</h1>
+  <p data-i18n="desc">Please answer the questions honestly.</p>
+
+  <form id="surveyForm">
+
+    <!-- SECTION 1 -->
+    <h2 data-i18n="sec1">Emotional Loneliness</h2>
+
+    <div class="q">
+      <label data-i18n="q1">I feel that I lack companionship.</label>
+      <div class="options">
+        <label><input type="radio" name="q1" value="1">1</label>
+        <label><input type="radio" name="q1" value="2">2</label>
+        <label><input type="radio" name="q1" value="3">3</label>
+        <label><input type="radio" name="q1" value="4">4</label>
+        <label><input type="radio" name="q1" value="5">5</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label data-i18n="q2">I feel left out.</label>
+      <div class="options">
+        <label><input type="radio" name="q2" value="1">1</label>
+        <label><input type="radio" name="q2" value="2">2</label>
+        <label><input type="radio" name="q2" value="3">3</label>
+        <label><input type="radio" name="q2" value="4">4</label>
+        <label><input type="radio" name="q2" value="5">5</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label data-i18n="q3">I feel isolated from others.</label>
+      <div class="options">
+        <label><input type="radio" name="q3" value="1">1</label>
+        <label><input type="radio" name="q3" value="2">2</label>
+        <label><input type="radio" name="q3" value="3">3</label>
+        <label><input type="radio" name="q3" value="4">4</label>
+        <label><input type="radio" name="q3" value="5">5</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label data-i18n="q4">I have friends I can talk about important things with.</label>
+      <div class="options">
+        <label><input type="radio" name="q4" value="1">1</label>
+        <label><input type="radio" name="q4" value="2">2</label>
+        <label><input type="radio" name="q4" value="3">3</label>
+        <label><input type="radio" name="q4" value="4">4</label>
+        <label><input type="radio" name="q4" value="5">5</label>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <h2 data-i18n="sec2">Social Interaction</h2>
+
+    <div class="q">
+      <label data-i18n="q9">How often do you avoid social activities because of money?</label>
+      <div class="options">
+        <label><input type="radio" name="q9" value="1">Never</label>
+        <label><input type="radio" name="q9" value="2">Rarely</label>
+        <label><input type="radio" name="q9" value="3">Sometimes</label>
+        <label><input type="radio" name="q9" value="4">Often</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label data-i18n="q10">How many times per week do you hang out with friends?</label>
+      <div class="options">
+        <label><input type="radio" name="q10" value="1">0</label>
+        <label><input type="radio" name="q10" value="2">1–5</label>
+        <label><input type="radio" name="q10" value="3">6–10</label>
+        <label><input type="radio" name="q10" value="4">10+</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label data-i18n="q11">Hours per week spent outside home?</label>
+      <div class="options">
+        <label><input type="radio" name="q11" value="1">Never</label>
+        <label><input type="radio" name="q11" value="2">Rarely</label>
+        <label><input type="radio" name="q11" value="3">Sometimes</label>
+        <label><input type="radio" name="q11" value="4">Often</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label data-i18n="q12">Weekend participation in group activities?</label>
+      <div class="options">
+        <label><input type="radio" name="q12" value="1">&lt;1 hour</label>
+        <label><input type="radio" name="q12" value="2">1–3 hours</label>
+        <label><input type="radio" name="q12" value="3">3–6 hours</label>
+        <label><input type="radio" name="q12" value="4">6+ hours</label>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <h2 data-i18n="sec3">Daily Life</h2>
+
+    <div class="q">
+      <label data-i18n="q13">Daily phone usage?</label>
+      <div class="options">
+        <label><input type="radio" name="q13" value="1">Never</label>
+        <label><input type="radio" name="q13" value="2">Rarely</label>
+        <label><input type="radio" name="q13" value="3">Sometimes</label>
+        <label><input type="radio" name="q13" value="4">Often</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label data-i18n="q14">Checking phone after midnight?</label>
+      <div class="options">
+        <label><input type="radio" name="q14" value="<5">&lt;5 times</label>
+        <label><input type="radio" name="q14" value="5-6">5–6</label>
+        <label><input type="radio" name="q14" value="6-8">6–8</label>
+        <label><input type="radio" name="q14" value="8+">8+</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label data-i18n="q15">Is your sleep restful?</label>
+      <div class="options">
+        <label><input type="radio" name="q15" value="1">Yes</label>
+        <label><input type="radio" name="q15" value="0">Sometimes / No</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label data-i18n="q16">Physical activity days?</label>
+      <div class="options">
+        <label><input type="radio" name="q16" value="0">Not at all</label>
+        <label><input type="radio" name="q16" value="1">Several days / More</label>
+      </div>
+    </div>
+
+    <!-- SECTION 4 -->
+    <h2 data-i18n="sec4">Mental Health</h2>
+
+    <div class="q">
+      <label data-i18n="q17">Feeling depressed?</label>
+      <div class="options">
+        <label><input type="radio" name="q17" value="1">Not at all</label>
+        <label><input type="radio" name="q17" value="2">Several days</label>
+        <label><input type="radio" name="q17" value="3">More than half</label>
+        <label><input type="radio" name="q17" value="4">Nearly daily</label>
+      </div>
+    </div>
+
+    <div class="q">
+      <label data-i18n="q18">Loss of interest?</label>
+      <div class="options">
+        <label><input type="radio" name="q18" value="1">Not at all</label>
+        <label><input type="radio" name="q18" value="2">Several days</label>
+        <label><input type="radio" name="q18" value="3">More than half</label>
+        <label><input type="radio" name="q18" value="4">Nearly daily</label>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn" data-i18n="submit">Submit</button>
+
+  </form>
+
+  <div id="result"></div>
+
+</div>
+
+<script src="translation.js"></script>
+
+<script>
+document.getElementById("surveyForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    function v(name) {
+        return document.querySelector(`input[name="${name}"]:checked`)?.value;
+    }
+
+    const data = {
+        Year: 1,
+        Living: "With family",
+        Lack_Comp: Number(v("q1")),
+        Left_Out: Number(v("q2")),
+        Isolated: Number(v("q3")),
+        Talk_Friends: Number(v("q4")),
+        Understood: 3,
+        Rely_On: 3,
+        Unknown_Me: 3,
+        Ask_Help: 3,
+        Meaningful_Rels: 3,
+        Avoid_Money: Number(v("q9")),
+        In_Person_Meetings: Number(v("q10")),
+        Time_Outside_Home: Number(v("q11")),
+        Weekend_Social: Number(v("q12")),
+        Phone_Hours: Number(v("q13")),
+        Phone_Late_Night: 5,
+        Sleep_Hours: 7,
+        Sleep_Restful: Number(v("q15")),
+        Physical_Activity: Number(v("q16")),
+        Depressed: Number(v("q17")),
+        Little_Interest: Number(v("q18")),
+    };
+
+    const response = await fetch("http://127.0.0.1:5000/predict", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+    });
+
+    const res = await response.json();
+
+    document.getElementById("result").innerHTML =
+        `<h3>Result: ${res.loneliness_level === 1 ? "HIGH" : "LOW"} loneliness</h3>
+         <p>Probability: ${(res.probability * 100).toFixed(2)}%</p>`;
+});
+</script>
+
+</body>
+</html>
