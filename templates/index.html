@@ -185,7 +185,8 @@
 
 </div>
 
-<script src="translation.js"></script>
+<script src="{{ url_for('static', filename='translation.js') }}"></script>
+
 
 <script>
 document.getElementById("surveyForm").addEventListener("submit", async function(e) {
@@ -236,6 +237,7 @@ document.getElementById("surveyForm").addEventListener("submit", async function(
 
 </body>
 </html>
+
 
 
 
